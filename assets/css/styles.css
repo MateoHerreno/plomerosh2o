@@ -1,0 +1,322 @@
+
+
+/*footer*/
+.footerimag{
+    background-image: url(../img/footerFondo.png);
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.miFooter .contenido {
+    color: gainsboro; /*color de la letra de footer*/
+    text-shadow: 3px 3px 10px black;
+}
+
+.miFooter i {
+    color:white;; /* Color del ícono */
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.2rem; /* Tamaño del ícono */
+    margin-right: 0.5em; /* Espacio entre el ícono y el texto */
+}
+
+/* header */
+
+#miHeader .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: transparent; /* Fondo transparente */
+
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: #1bc8c2;
+}
+
+/*nav*/
+.icono-nav{
+    width: 3em; /* Tamaño del logo */
+    margin-left: 0.5em;
+}
+#nav-rigt{
+    align-items: flex-end;
+}
+
+/*----------------index-----------*/
+.bodyIndex{
+    background-color:rgb(16, 16, 16);
+}
+/*primer y segundo bloque*/
+.homeBloque1{
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 88, 85, 0.326), rgb(16, 16, 16)), 
+                      url(../img/fondoindex.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.whatsapp-btn {
+    position: fixed;
+    bottom: 15%; /* Posición media-baja */
+    right: 0.5em; /* Margen desde el borde izquierdo */
+    background-color: #25D366; /* Verde WhatsApp */
+    color: white;
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
+
+/*tercer bloque*/
+* {
+    box-sizing: border-box;
+}
+
+.bodyPaneles {
+    background-color:rgb(16,16,16);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 65vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none
+    }
+}
+
+.service-card {
+    flex: 1 1 300px; /* Ajuste flexible */
+    max-width: 350px;
+}
+.serviciosTitulo{
+    background: linear-gradient(rgba(7, 88, 85, 0.762), rgb(16, 16, 16));
+}
+.serviciosTitulo2{
+    background: linear-gradient(rgba(12, 7, 88, 0.762), rgb(16, 16, 16));
+}
+/* carrusel*/ 
+.carousel-item img {
+    width: 50%;
+    height: auto; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Recorta y ajusta la imagen sin deformarla */
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    transform: scale(0.7);
+    border-radius: 2%;
+}
+
+.carousel-item .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------nosotros-------------*/
+.nosotrosBloque1{
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 88, 85, 0.326), rgb(16, 16, 16)), 
+                      url(../img/fondonosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.article-container {
+    display: flex;
+    align-items: center;
+    gap: 90px; /* Espacio entre la imagen y el texto */
+    max-width: 900px;
+    margin: 40px auto; /* Centrar el contenedor */
+}
+
+.article-container img {
+    width: 40%; /* La imagen ocupa el 40% del ancho */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.article-text {
+    width: 60%; /* El texto ocupa el 60% del ancho */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .article-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article-container img,
+    .article-text {
+        width: 100%;
+    }
+}
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px; /* Altura uniforme */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+}
+
+/* Distribución de 7 imágenes por fila en pantallas grandes */
+.col-custom {
+    flex: 0 0 calc(100% / 7); /* Cada imagen ocupa 1/7 del ancho */
+    max-width: calc(100% / 7);
+}
+
+/* Ajuste para tablets: 4 imágenes por fila */
+@media (max-width: 992px) {
+    .col-custom {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* Ajuste para móviles: 2 imágenes por fila */
+@media (max-width: 576px) {
+    .col-custom {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/*servicios*/
+.serviciosbloque1{
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 88, 85, 0.326), rgb(16, 16, 16)), 
+                      url(../img/serviciosfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card {
+    max-width: 350px;
+    width: 100%;
+}
+
+/* 3 tarjetas por fila en pantallas medianas */
+@media (max-width: 992px) {
+    .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* 1 tarjeta por fila en pantallas pequeñas */
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
