@@ -181,7 +181,7 @@ servicios.forEach(servicio => {
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${servicio.nombre}</h5>
                 <p class="card-text text-light flex-grow-1">${servicio.descripcion}</p>
-                <a href="https://wa.me/3147597348?text=Hola,+deseo+el+servicio+de+${servicio.nombre}" target="_blank" style="background-color:#1bdfda;" class="btn btn-primary btn-lg mt-auto">Solicitar Servicio</a>
+                <a href="https://wa.me/3507226700?text=Hola,+deseo+el+servicio+de+${servicio.nombre}" target="_blank" style="background-color:#1bdfda;" class="btn btn-primary btn-lg mt-auto">Solicitar Servicio</a>
             </div>
         </div>
     `;
