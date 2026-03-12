@@ -13,12 +13,12 @@ const PRECACHE_ASSETS = [
     '/assets/css/styles.css',
     '/assets/js/config.js',
     '/assets/js/script.js',
-    '/assets/img/fondoindex.jpeg',
-    '/assets/img/fondonosotros.jpg',
-    '/assets/img/serviciosfondo.jpg',
+    '/assets/img/fondoindex.webp',
+    '/assets/img/fondonosotros.webp',
+    '/assets/img/serviciosfondo.webp',
     '/assets/img/favicon.png',
-    '/assets/img/logoSinFondo.png',
-    '/assets/img/footerFondo.jpg',
+    '/assets/img/logoSinFondo.webp',
+    '/assets/img/footerFondo.webp',
 ];
 
 // ─── Instalación: pre-cachear assets esenciales ───────────────────────────────

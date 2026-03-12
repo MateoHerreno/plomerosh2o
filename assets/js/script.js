@@ -140,12 +140,12 @@ function crearGaleria() {
         div.className = "col-custom";
         div.innerHTML = `
             <div class="gallery-item">
-                <a href="assets/img/galeria/${i}.jpg"
+                <a href="assets/img/galeria/${i}.webp"
                    class="glightbox"
                    data-gallery="galeria-h2o"
                    data-description="Trabajo de plomería en Medellín — Plomeros H2O"
                    aria-label="Ver imagen de trabajo de plomería ${i}">
-                    <img src="assets/img/galeria/${i}.jpg" alt="Trabajo de plomería en Medellín número ${i}" class="img-fluid" loading="lazy">
+                    <img src="assets/img/galeria/${i}.webp" alt="Trabajo de plomería en Medellín número ${i}" class="img-fluid" loading="lazy">
                 </a>
             </div>
         `;
@@ -191,7 +191,7 @@ const servicios = [
         "id": 1,
         "nombre": "Instalación de desagüe",
         "descripcion": "Montaje de tuberías PVC sanitarias para redes de aguas residuales en hogares y comercios. Pendientes técnicas correctas y prueba de flujo incluidas.",
-        "imagen": "./assets/img/servicio1.jpg",
+        "imagen": "./assets/img/servicio1.webp",
         "pagina": "instalacion-tuberias-medellin.html"
     },
     {
@@ -249,7 +249,7 @@ const servicios = [
         "id": 10,
         "nombre": "Electrodomésticos — agua potable",
         "descripcion": "Instalación de lavaplatos eléctricos, nevecones con dispensador, cafeterías, cavas y equipos que requieran conexión a red de agua potable.",
-        "imagen": "./assets/img/servicio10.jpg"
+        "imagen": "./assets/img/servicio10.webp"
     },
     {
         "id": 11,
@@ -262,20 +262,20 @@ const servicios = [
         "id": 12,
         "nombre": "Reparación de red de gas",
         "descripcion": "Reparación de válvulas, fugas y certificación de redes de gas doméstico. Emitimos certificado de conformidad para reconexiones según normativa NTC.",
-        "imagen": "./assets/img/servicio11.jpg",
+        "imagen": "./assets/img/servicio11.webp",
         "pagina": "redes-gas-medellin.html"
     },
     {
         "id": 13,
         "nombre": "Instalación de equipo sanitario",
         "descripcion": "Cambio e instalación de duchas, lavamanos, sanitarios y orinales. Incluye conexiones de agua fría y caliente, válvulas de corte y revisión de desagüe.",
-        "imagen": "./assets/img/galeria/2.jpg"
+        "imagen": "./assets/img/galeria/2.webp"
     },
     {
         "id": 14,
         "nombre": "Reparación de fugas",
         "descripcion": "Detección y reparación de goteos, tubos reventados y humedades por fuga de acueducto. Usamos técnica sin demoler para localizar el punto exacto de la fuga.",
-        "imagen": "./assets/img/servicio14.jpg",
+        "imagen": "./assets/img/servicio14.webp",
         "pagina": "reparacion-fugas-medellin.html"
     },
 ];
