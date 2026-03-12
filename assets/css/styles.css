@@ -2,7 +2,7 @@
 
 /*footer*/
 .footerimag{
-    background-image: url(../img/footerFondo.png);
+    background-image: url(../img/footerFondo.jpg);
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -102,7 +102,7 @@
     overflow: hidden;
 }
 
-.container {
+.bodyPaneles .container {
     display: flex;
     width: 65vw;
 }
@@ -142,7 +142,7 @@
 }
 
 @media (max-width: 480px) {
-    .container {
+    .bodyPaneles .container {
         width: 100vw;
     }
     .panel:nth-of-type(4),
@@ -319,4 +319,42 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+/* ─── WhatsApp Pulse Animation ─────────────────────────────────────────────── */
+@keyframes wpp-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70%  { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.whatsapp-btn {
+    animation: wpp-pulse 2s infinite;
+}
+
+/* ─── Tarjetas de Testimonios ──────────────────────────────────────────────── */
+.testimonio-card {
+    background-color: rgb(28, 28, 28);
+    border: 1px solid #075855;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(7, 88, 85, 0.4);
+}
+.estrellas {
+    color: #FFD700;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+/* ─── Lightbox: cursor zoom-in en imágenes de galería ─────────────────────── */
+.gallery-item a {
+    display: block;
+    cursor: zoom-in;
+}
+
+/* ─── Accordion dark-theme: icono de toggle visible ──────────────────────── */
+.accordion-button.collapsed::after,
+.accordion-button:not(.collapsed)::after {
+    filter: invert(1) brightness(2);
 }

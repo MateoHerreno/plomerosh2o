@@ -1,0 +1,25 @@
+{
+  "name": "Plomeros H2O Medellín",
+  "short_name": "H2O Plomeros",
+  "description": "Plomeros certificados en Medellín 24/7 — Emergencias, fugas, destapes y más.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101010",
+  "theme_color": "#075855",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/logoSinFondo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
