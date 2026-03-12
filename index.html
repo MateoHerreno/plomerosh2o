@@ -317,16 +317,26 @@
                 <span class="badge fs-6 p-2" style="background-color:#075855;">La Estrella</span>
             </div>
             <!-- Mapa área de cobertura Valle de Aburrá -->
-            <div class="ratio ratio-16x9 mt-4 mx-auto" style="max-width:700px;">
-                <iframe
-                    src="https://maps.google.com/maps?q=Valle+de+Aburr%C3%A1,+Antioquia,+Colombia&output=embed&hl=es"
-                    title="Área de cobertura Plomeros H2O — Valle de Aburrá, Medellín"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    style="border-radius:12px; border:2px solid #075855;">
-                </iframe>
+            <div class="ratio ratio-16x9 mt-4 mx-auto" style="max-width:700px;" id="mapContainer">
+                <div id="mapPlaceholder" style="background:#e8f4f3;border-radius:12px;border:2px solid #075855;display:flex;align-items:center;justify-content:center;cursor:pointer;" onclick="loadMap()" aria-label="Cargar mapa de cobertura">
+                    <div style="text-align:center;color:#075855;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16" style="opacity:0.6"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                        <p style="margin:8px 0 0;font-size:.9rem;">Haz clic para ver el mapa de cobertura</p>
+                    </div>
+                </div>
             </div>
+            <script>
+            function loadMap(){
+                var c=document.getElementById('mapContainer');
+                c.innerHTML='<iframe src="https://maps.google.com/maps?q=Valle+de+Aburr%C3%A1,+Antioquia,+Colombia&output=embed&hl=es" title="Área de cobertura Plomeros H2O — Valle de Aburrá, Medellín" allowfullscreen referrerpolicy="no-referrer-when-downgrade" style="border-radius:12px;border:2px solid #075855;width:100%;height:100%;"></iframe>';
+            }
+            (function(){
+                if('IntersectionObserver' in window){
+                    var obs=new IntersectionObserver(function(e){if(e[0].isIntersecting){loadMap();obs.disconnect();}},{rootMargin:'200px'});
+                    obs.observe(document.getElementById('mapContainer'));
+                }
+            })();
+            </script>
         </div>
     </section>
 

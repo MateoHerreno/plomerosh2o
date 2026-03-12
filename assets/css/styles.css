@@ -1,5 +1,12 @@
 
 
+/* Bootstrap CLS prevention: inline critical reset so body doesn't shift when Bootstrap CSS loads async */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+img,video{max-width:100%;height:auto}
+.navbar{min-height:56px}
+.bodyPaneles{min-height:400px}
+
 /*footer*/
 .footerimag{
     background-image: url(../img/footerFondo.jpg);
