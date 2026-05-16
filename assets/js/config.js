@@ -16,14 +16,15 @@ const SITE_CONFIG = {
 
     // ─── Contacto ─────────────────────────────────────────────────────
     contacto: {
-        telefono:  "302 227 4397",
+        telefono:  "3148137618",
         email:     "soluciones@plomerom.com",
-        direccion: "Medellín y Valle de Aburrá, Antioquia, Colombia",
+        direccion: "Cra 44 #20 28, El Poblado, Medellín, Antioquia",
     },
 
     // ─── Redes sociales ───────────────────────────────────────────────
     redes: {
-        facebook:  "https://www.facebook.com/profile.php?id=61573780021309",
-        instagram: "https://www.instagram.com/h2oplomeros/",
+        facebook:  "https://www.facebook.com/profile.php?id=61568816871985",
+        instagram: "https://www.instagram.com/plome_romedellin?igsh=MThpMDJuYzloNTF",
+        tiktok:    "http://tiktok.com/@juanurrego91?_r=1&_t=ZS-96OVMl4mVFM",
     },
 };

@@ -16,6 +16,8 @@ function renderHeader() {
                         <i class="fa-brands fa-facebook"></i></a>
                     <a href="${redes.instagram}" target="_blank" rel="noopener" aria-label="Instagram Plomeros H2O">
                         <i class="fa-brands fa-instagram"></i></a>
+                    <a href="${redes.tiktok}" target="_blank" rel="noopener" aria-label="TikTok Plomeros H2O">
+                        <i class="fa-brands fa-tiktok"></i></a>
                     <a href="https://wa.me/${whatsapp.completo}" target="_blank" rel="noopener" aria-label="WhatsApp Plomeros H2O">
                         <i class="fa-brands fa-whatsapp"></i></a>
                 </div>
@@ -61,6 +63,9 @@ function renderFooter() {
                     <a href="${redes.instagram}" target="_blank" rel="noopener"
                        style="color:gainsboro;font-size:1.4rem;" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i></a>
+                    <a href="${redes.tiktok}" target="_blank" rel="noopener"
+                       style="color:gainsboro;font-size:1.4rem;" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i></a>
                 </div>
                 <p class="small mt-2" style="color:#aaa;">Plomeros H2O © ${new Date().getFullYear()} | Servicio 24/7</p>
             </div>
