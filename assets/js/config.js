@@ -1,6 +1,6 @@
 ﻿/**
  * ╔══════════════════════════════════════════════════════════════════╗
- * ║        CONFIGURACIÓN CENTRAL — Plomeros H2O                     ║
+ * ║        CONFIGURACIÓN CENTRAL — Plomeros Medellín                  ║
  * ║  Cambia los datos aquí y se actualizan en toda la página         ║
  * ╚══════════════════════════════════════════════════════════════════╝
  */
@@ -17,7 +17,7 @@ const SITE_CONFIG = {
     // ─── Contacto ─────────────────────────────────────────────────────
     contacto: {
         telefono:  "3148137618",
-        email:     "soluciones@plomerom.com",
+        email:     "davidjuanurrego@gmail.com",
         direccion: "Cra 44 #20 28, El Poblado, Medellín, Antioquia",
     },
 

@@ -1,9 +1,9 @@
-// ─── Service Worker — Plomeros H2O ───────────────────────────────────────────
+// ─── Service Worker — Plomeros Medellín ─────────────────────────────────────
 // Estrategia: Cache-first para assets estáticos; network-first para HTML.
 // Actualiza CACHE_NAME cuando hagas un deploy nuevo para que los clientes
 // reciban la versión actualizada del sitio.
 
-const CACHE_NAME = 'h2oplomeros-v1';
+const CACHE_NAME = 'plomerosmedellin-v1';
 
 const PRECACHE_ASSETS = [
     '/',
@@ -79,3 +79,4 @@ self.addEventListener('fetch', event => {
         );
     }
 });
+

@@ -1,6 +1,6 @@
 {
-  "name": "Plomeros H2O Medellín",
-  "short_name": "H2O Plomeros",
+  "name": "Plomeros Medellín 24/7",
+  "short_name": "Plomeros Medellín",
   "description": "Plomeros certificados en Medellín 24/7 — Emergencias, fugas, destapes y más.",
   "start_url": "/",
   "scope": "/",
@@ -23,3 +23,4 @@
     }
   ]
 }
+
