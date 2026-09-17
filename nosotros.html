@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+        <script src="assets/js/config.js"></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18186842502"></script>
         <script>
@@ -48,6 +49,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- GLightbox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Fragmento de evento para conversión de llamadas de Google -->
+    <script>
+        gtag('config', 'AW-18186842502/wXZade', {
+            'phone_conversion_number': SITE_CONFIG.whatsapp.numero
+        });
+    </script>
 </head>
 
 
@@ -109,7 +116,6 @@
 </body>
 
 <!--scripts de pie-->
-<script src="assets/js/config.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="assets/js/script.min.js" defer></script>
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
