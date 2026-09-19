@@ -6,6 +6,14 @@
  */
 const SITE_CONFIG = {
 
+    // ─── Google Ads ───────────────────────────────────────────────────
+    // Etiqueta de conversión "Contacto" (se dispara solo en el botón de WhatsApp)
+    googleAds: {
+        sendTo: "AW-18186842502/wlSnCIrOvPscEIbjlOBD",
+        value: 1.0,
+        currency: "COP",
+    },
+
     // ─── WhatsApp ─────────────────────────────────────────────────────
     whatsapp: {
         numero: "3022274397",           // Número sin código de país
@@ -28,3 +36,4 @@ const SITE_CONFIG = {
         tiktok:    "http://tiktok.com/@juanurrego91?_r=1&_t=ZS-96OVMl4mVFM",
     },
 };
+

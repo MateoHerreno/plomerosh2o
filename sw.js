@@ -1,3 +1,4 @@
+
 // ─── Service Worker — Plomeros Medellín ─────────────────────────────────────
 // Estrategia: Cache-first para assets estáticos; network-first para HTML.
 // Actualiza CACHE_NAME cuando hagas un deploy nuevo para que los clientes
